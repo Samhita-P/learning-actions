@@ -7,7 +7,20 @@ on:
 jobs:
   say-hello:
     runs-on: ubuntu-latest
+
     steps:
       - name: Print a message
         shell: bash
         run: echo "Hello! GitHub Actions is working 🎉"
+
+      - name: Step 1
+        run: echo "This is step 1"
+
+      - name: Step 2
+        run: echo "Current directory:"
+
+      - name: Step 3
+        run: pwd
+
+      - name: Step 4
+        run: ls -la
